@@ -1,0 +1,270 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    min-height:100vh;
+    color:#f8fafc;
+}
+
+
+.booklist-container{
+    width:90%;
+    max-width:1400px;
+    margin:40px auto;
+}
+
+.booklist-container h2{
+    text-align:center;
+    font-size:2.7rem;
+    color:#ffffff;
+    margin-bottom:10px;
+    letter-spacing:1px;
+}
+
+.booklist-container h3{
+    text-align:center;
+    color:#94a3b8;
+    font-weight:400;
+    margin-bottom:30px;
+}
+
+
+.booklist-container ul{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    list-style:none;
+    margin-bottom:35px;
+}
+
+.booklist-container li{
+    background:#1e293b;
+    color:#e2e8f0;
+    padding:12px 30px;
+    border-radius:12px;
+    border:1px solid #334155;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.booklist-container li:hover{
+    transform:translateY(-3px);
+    border-color:#3b82f6;
+}
+
+.booklist-container hr{
+    border:none;
+    height:1px;
+    background:#334155;
+    margin-bottom:35px;
+}
+
+
+
+.books-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+    align-items:start;
+}
+
+
+
+.booksCard{
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:18px;
+    padding:22px;
+    transition:.35s;
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+    position:relative;
+    overflow:hidden;
+}
+
+.booksCard::before{
+    content:"";
+    position:absolute;
+    top:-80px;
+    right:-80px;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:rgba(59,130,246,.08);
+}
+
+.booksCard:hover{
+    transform:translateY(-10px);
+    border-color:#3b82f6;
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+}
+
+/* ==========================================
+   Book Details
+========================================== */
+
+.booksCard h3:first-child{
+    color:#ffffff;
+    margin-bottom:15px;
+    font-size:23px;
+}
+
+.booksCard h4{
+    color:#cbd5e1;
+    font-weight:400;
+    line-height:1.8;
+    font-size:15px;
+}
+
+.booksCard strong{
+    color:#60a5fa;
+}
+
+
+.booksCard button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+/* Save Button */
+
+.save-btn{
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+    color:white;
+}
+
+.save-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(239,68,68,.4);
+}
+
+
+.remove-btn{
+    background:linear-gradient(135deg,#111827,#020617);
+    color:white;
+}
+
+.remove-btn:hover{
+    background:linear-gradient(135deg,#1e293b,#0f172a);
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,.6);
+}
+
+
+.read-btn{
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+    color:white;
+}
+
+.read-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(59,130,246,.4);
+}
+
+/* Show Less */
+
+.show-btn{
+    background:linear-gradient(135deg,#059669,#10b981);
+    color:white;
+}
+
+.show-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(16,185,129,.4);
+}
+
+.booksCard div{
+    margin-top:18px;
+    background:#0f172a;
+    border-left:4px solid #3b82f6;
+    padding:15px;
+    border-radius:10px;
+    animation:fade .4s ease;
+}
+
+.booksCard div strong{
+    color:#60a5fa;
+}
+
+.booksCard div h3{
+    margin-top:10px;
+    font-size:15px;
+    line-height:1.7;
+    font-weight:400;
+    color:#cbd5e1;
+    text-align:left;
+}
+
+
+@keyframes fade{
+
+from{
+    opacity:0;
+    transform:translateY(-10px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#3b82f6;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#2563eb;
+}
+
+
+@media(max-width:992px){
+
+.books-list{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:650px){
+
+.books-list{
+    grid-template-columns:1fr;
+}
+
+.booklist-container h2{
+    font-size:2rem;
+}
+
+.booklist-container ul{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+}

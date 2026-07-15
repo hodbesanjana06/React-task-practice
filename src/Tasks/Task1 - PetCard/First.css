@@ -1,0 +1,130 @@
+/* Page background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* Concepts section */
+.concepts {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.concepts ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.concepts li {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+
+/* Main Task section */
+.Task {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Task h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+
+/* Pet Card */
+.container {
+  width: 260px;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border-top: 5px solid #6366f1;
+}
+
+
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+.container h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #334155;
+}
+
+
+.container p {
+  font-size: 17px;
+  line-height: 2;
+  color: #475569;
+}
+
+
+/* Button */
+.container button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.container button:hover {
+  background: #3730a3;
+}
+
+
+/* Responsive */
+@media(max-width:600px){
+
+  .Task {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .concepts ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
