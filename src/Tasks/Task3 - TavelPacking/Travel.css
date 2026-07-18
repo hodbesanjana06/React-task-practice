@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f3f7fb;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.list-container {
+  width: 850px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.list-container h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #1e3a8a;
+}
+
+.list-container h4 {
+  text-align: center;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Count */
+
+.count ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form */
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  outline: none;
+}
+
+form input[type="text"]:focus,
+form select:focus {
+  border-color: #2563eb;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+/* Cards */
+
+.travel-card {
+  background: #f8fafc;
+  border-left: 6px solid #2563eb;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.travel-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.travel-card strong {
+  color: #222;
+}
+
+.travel-card div {
+  line-height: 1.8;
+}
+
+/* Buttons */
+
+.btn {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn button:first-child {
+  background: #16a34a;
+}
+
+.btn button:first-child:hover {
+  background: #15803d;
+}
+
+.btn button:last-child {
+  background: #dc2626;
+}
+
+.btn button:last-child:hover {
+  background: #b91c1c;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .list-container {
+    width: 95%;
+  }
+
+  .count ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+}

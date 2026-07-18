@@ -1,55 +1,11 @@
-import BookList from "./Tasks/Task2 - BookRecommanded/BookList";
+import Travel from "./Tasks/Task3 - TavelPacking/Travel";
+import RecipeFinder from "./Tasks/Task4 - RecipeFinder/RecipeFinder";
 
-function App() {
-const Books=[
-  {
-    id : 101,
-    name : "purna purshotam krishna bhagvan",
-    author : "prabhu das",
-    Gener : "Love",
-    Rating : 5.1,
-    Description : "Tiny changes create remarkable results.."
-  },
-  {
-    id : 102,
-    name : "purna purshotam krishna bhagvan",
-    author : "prabhu das",
-    Gener : "Love",
-    Rating : 5,
-    Description : "Tiny changes create remarkable results.."
-  },{
-    id : 103,
-    name : "purna purshotam krishna bhagvan",
-    author : "prabhu das",
-    Gener : "Love",
-    Rating : 5,
-    Description : "Tiny changes create remarkable results.."
-  },{
-    id : 104,
-    name : "purna purshotam krishna bhagvan",
-    author : "prabhu das",
-    Gener : "Love",
-    Rating : 5,
-    Description : "Tiny changes create remarkable results.."
-  },{
-    id : 105,
-    name : "purna purshotam krishna bhagvan",
-    author : "prabhu das",
-    Gener : "Love",
-    Rating : 5,
-    Description : "Tiny changes create remarkable results.."
-  },{
-    id : 106,
-    name : "purna purshotam krishna bhagvan",
-    author : "prabhu das",
-    Gener : "Love",
-    Rating : 5,
-    Description : "Tiny changes create remarkable results.."
-  },
-]
-  return(
+function App(){
+  return (
     <>
-        <BookList books= {Books}/>      
+      {/* <Travel/> */}
+      <RecipeFinder/>
     </>
   )
 }
