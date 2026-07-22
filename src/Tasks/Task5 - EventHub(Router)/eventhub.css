@@ -1,0 +1,809 @@
+/* =========================
+   Navbar
+========================= */
+
+nav {
+    width: 100%;
+    height: 75px;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration: none;
+    color:#444;
+    font-size:18px;
+    font-weight:600;
+    padding:10px 18px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#6366f1;
+    color:white;
+}
+
+nav a.active{
+    background:#6366f1;
+    color:white;
+}
+
+/* home page */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* Home */
+
+.home-container{
+    width:90%;
+    margin:auto;
+}
+
+/* Hero */
+
+.hero-section{
+    margin-top:40px;
+    min-height:80vh;
+    border-radius:20px;
+    background:linear-gradient(135deg,#6366f1,#7c3aed);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:40px;
+}
+
+.hero-section h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-section h3{
+    font-size:24px;
+    font-weight:400;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.hero-section button{
+    background:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-section button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.hero-section button a{
+    text-decoration:none;
+    color:#5b21b6;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Featured */
+
+.featured-section{
+    margin:80px 0;
+}
+
+.featured-section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:45px;
+}
+
+.featured-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.featured-section h2{
+    width:100%;
+}
+
+.feature-card{
+    width:320px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(99,102,241,.25);
+}
+
+.feature-card h3{
+    margin-bottom:20px;
+    color:#333;
+}
+
+.feature-card a{
+    display:inline-block;
+    margin-top:10px;
+    background:#6366f1;
+    color:white;
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:8px;
+}
+
+/* Why EventHub */
+
+.eventhub-section{
+    margin:80px 0;
+}
+
+.eventhub-section h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.eventhub-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.eventhub-section h2{
+    width:100%;
+}
+
+.eventhub-text{
+    width:300px;
+    background:white;
+    padding:40px 30px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+    font-size:24px;
+    font-weight:600;
+}
+
+.eventhub-text span{
+    display:block;
+    margin-top:15px;
+    color:#666;
+    font-size:16px;
+    font-weight:400;
+}
+
+.eventhub-text:hover{
+    background:#6366f1;
+    color:white;
+    transform:translateY(-10px);
+}
+
+.eventhub-text:hover span{
+    color:#f1f1f1;
+}
+
+hr{
+    display:none;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav{
+        gap:10px;
+        flex-wrap:wrap;
+        height:auto;
+        padding:15px;
+    }
+
+    nav a{
+        font-size:16px;
+    }
+
+    .hero-section{
+        min-height:60vh;
+    }
+
+    .hero-section h2{
+        font-size:35px;
+    }
+
+    .hero-section h3{
+        font-size:18px;
+    }
+
+    .feature-card,
+    .eventhub-text{
+        width:100%;
+    }
+
+}
+
+/* =============================================================================
+   EVENTS PAGE
+==================================================================================== */
+
+.event-hero-section{
+    width:90%;
+    margin:40px auto 30px;
+    min-height:250px;
+    background:linear-gradient(135deg,#6366f1,#7c3aed);
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:40px;
+    box-shadow:0 15px 30px rgba(99,102,241,.25);
+}
+
+.event-hero-section h3{
+    font-size:48px;
+    line-height:1.4;
+    font-weight:700;
+}
+
+/* ===================================
+   SEARCH SECTION
+=================================== */
+
+.search-section{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px 30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.search-section form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.search-section label{
+    font-size:17px;
+    font-weight:600;
+    color:#444;
+}
+
+.search-section input,
+.search-section select{
+    padding:12px 16px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+    min-width:220px;
+}
+
+.search-section input:focus,
+.search-section select:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 10px rgba(99,102,241,.2);
+}
+
+/* ===================================
+   EVENT LIST
+=================================== */
+
+.event-list{
+    width:90%;
+    margin:40px auto 80px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* ===================================
+   EVENT CARD
+=================================== */
+
+.event-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(99,102,241,.25);
+}
+
+.event-card h2{
+    color:#333;
+    margin-bottom:18px;
+    font-size:26px;
+}
+
+.event-card p{
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.event-card a{
+    text-decoration:none;
+    background:#6366f1;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:600;
+    transition:.3s;
+}
+
+.event-card a:hover{
+    background:#4f46e5;
+}
+
+/* ===================================
+   EVENT DETAILS
+=================================== */
+
+.event-details{
+    width:70%;
+    margin:60px auto;
+    background:white;
+    border-radius:20px;
+    padding:45px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.event-details h2{
+    font-size:42px;
+    color:#4f46e5;
+    margin-bottom:30px;
+}
+
+.event-details p{
+    font-size:18px;
+    color:#555;
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+.event-details strong{
+    color:#222;
+}
+
+.event-details h3{
+    margin-top:35px;
+    margin-bottom:15px;
+    color:#4f46e5;
+    font-size:28px;
+}
+
+/* ===================================
+   EVENT NOT FOUND
+=================================== */
+
+.event-not-found{
+    width:60%;
+    margin:80px auto;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.event-not-found h2{
+    color:#dc2626;
+    margin-bottom:15px;
+    font-size:35px;
+}
+
+.event-not-found p{
+    color:#666;
+    font-size:18px;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:992px){
+
+    .event-list{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .event-details{
+        width:90%;
+    }
+
+    .event-hero-section h3{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .event-list{
+        grid-template-columns:1fr;
+    }
+
+    .event-hero-section{
+        min-height:180px;
+    }
+
+    .event-hero-section h3{
+        font-size:30px;
+    }
+
+    .search-section form{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .search-section input,
+    .search-section select{
+        width:100%;
+        min-width:100%;
+    }
+
+    .event-details{
+        width:95%;
+        padding:30px;
+    }
+
+    .event-details h2{
+        font-size:30px;
+    }
+
+    .event-details h3{
+        font-size:24px;
+    }
+
+}
+
+/* =====================================================================
+   CREATE EVENT PAGE
+========================================================================= */
+
+.createEvent-section{
+    width:90%;
+    margin:40px auto 80px;
+}
+
+/* Hero */
+
+.createEvent-hero-section{
+    min-height:220px;
+    background:linear-gradient(135deg,#6366f1,#7c3aed);
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:40px;
+    margin-bottom:40px;
+    box-shadow:0 15px 30px rgba(99,102,241,.25);
+}
+
+.createEvent-hero-section h3{
+    font-size:45px;
+    line-height:1.5;
+}
+
+/* Form */
+
+.createEvent-form{
+    width:700px;
+    margin:auto;
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.createEvent-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Labels */
+
+.createEvent-form label{
+    font-size:17px;
+    font-weight:600;
+    color:#444;
+    margin-bottom:8px;
+}
+
+/* Inputs */
+
+.createEvent-form input,
+.createEvent-form select,
+.createEvent-form textarea{
+    width:100%;
+    padding:14px 16px;
+    font-size:16px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+    margin-bottom:20px;
+    background:white;
+}
+
+/* Focus */
+
+.createEvent-form input:focus,
+.createEvent-form select:focus,
+.createEvent-form textarea:focus{
+    border-color:#6366f1;
+    box-shadow:0 0 12px rgba(99,102,241,.2);
+}
+
+/* Textarea */
+
+.createEvent-form textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+/* Button */
+
+.createEvent-form button{
+    margin-top:10px;
+    background:#6366f1;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.createEvent-form button:hover{
+    background:#4f46e5;
+    transform:translateY(-3px);
+    box-shadow:0 12px 20px rgba(99,102,241,.25);
+}
+
+/* Two Column Layout (optional) */
+
+.createEvent-form form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.createEvent-form label{
+    margin-bottom:5px;
+}
+
+.createEvent-form input,
+.createEvent-form select,
+.createEvent-form textarea{
+    margin-bottom:0;
+}
+
+/* Full Width Fields */
+
+.createEvent-form label:nth-of-type(7),
+.createEvent-form textarea,
+.createEvent-form label:nth-of-type(9),
+.createEvent-form button{
+    grid-column:1/3;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .createEvent-form{
+        width:100%;
+        padding:30px;
+    }
+
+    .createEvent-form form{
+        grid-template-columns:1fr;
+    }
+
+    .createEvent-form label:nth-of-type(7),
+    .createEvent-form textarea,
+    .createEvent-form label:nth-of-type(9),
+    .createEvent-form button{
+        grid-column:1;
+    }
+
+    .createEvent-hero-section{
+        min-height:180px;
+        padding:30px;
+    }
+
+    .createEvent-hero-section h3{
+        font-size:30px;
+    }
+}
+
+
+
+
+
+/* ==================================================================================
+   PROFILE PAGE
+===================================================================================== */
+
+.profile-hero-section{
+    width:90%;
+    margin:40px auto 80px;
+}
+
+.profile-hero-section h3:first-child{
+    min-height:220px;
+    background:linear-gradient(135deg,#6366f1,#7c3aed);
+    border-radius:20px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:42px;
+    line-height:1.5;
+    box-shadow:0 15px 30px rgba(99,102,241,.25);
+}
+
+/* Profile Layout */
+
+.profile-container{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+/* Sidebar */
+
+.profile-intro{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.profile-intro h4{
+    font-size:24px;
+    color:#333;
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+.profile-intro a{
+    display:block;
+    text-decoration:none;
+    background:#6366f1;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    margin:15px 0;
+    font-weight:600;
+    transition:.3s;
+}
+
+.profile-intro a:hover{
+    background:#4f46e5;
+    transform:translateY(-3px);
+}
+
+/* Details Card */
+
+.profile-details{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.profile-details h3{
+    color:#4f46e5;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.profile-details p{
+    font-size:18px;
+    line-height:2;
+    color:#555;
+}
+
+/* ===================================
+   OVERVIEW PAGE
+=================================== */
+
+.Overview-hero-section{
+    margin-top:30px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.Overview-hero-section h3{
+    color:#4f46e5;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.Overview-hero-section h4{
+    font-size:24px;
+    color:#333;
+    margin-bottom:20px;
+}
+
+.Overview-hero-section p{
+    font-size:18px;
+    color:#555;
+    line-height:2;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:768px){
+
+    .profile-container{
+        grid-template-columns:1fr;
+    }
+
+    .profile-hero-section h3:first-child{
+        font-size:30px;
+        min-height:180px;
+        padding:20px;
+    }
+
+    .profile-intro{
+        margin-top:30px;
+    }
+
+}
