@@ -1,0 +1,346 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* =======================
+        NAVBAR
+======================= */
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:18px;
+    background:#111827;
+    box-shadow:0 4px 10px rgba(0,0,0,.3);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    text-decoration:none;
+    color:#d1d5db;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s;
+    padding:8px 15px;
+    border-radius:8px;
+}
+
+nav a:hover{
+    color:white;
+    background:#ef4444;
+}
+
+nav .active{
+    background:#ef4444;
+    color:white;
+}
+
+/* =======================
+      HOME CONTAINER
+======================= */
+
+.home-container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:#334155;
+    margin:70px 0;
+}
+
+/* =======================
+      HERO SECTION
+======================= */
+
+.hero-section{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(15,23,42,.8),rgba(15,23,42,.8)),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    padding:40px;
+}
+
+.hero-section h2{
+    font-size:65px;
+    color:#ef4444;
+    margin-bottom:20px;
+}
+
+.hero-section p{
+    font-size:25px;
+    color:#cbd5e1;
+}
+
+.hero-section h3{
+    margin:25px 0 40px;
+    font-size:22px;
+    font-weight:400;
+    color:#f8fafc;
+}
+
+.hero-section a{
+    text-decoration:none;
+    color:white;
+    background:#ef4444;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.hero-section a:hover{
+    background:#dc2626;
+    transform:translateY(-4px);
+}
+
+/* =======================
+      SECTION TITLE
+======================= */
+
+.trending-section h2,
+.Genre-section h2,
+.why-section h2{
+    font-size:34px;
+    text-align:center;
+    margin-bottom:40px;
+    color:#f8fafc;
+}
+
+/* =======================
+      MOVIE CARDS
+======================= */
+
+.trending-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.movie-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    padding-bottom:25px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.movie-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(239,68,68,.3);
+}
+
+.movie-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    background:#334155;
+}
+
+.movie-card h3{
+    margin:20px;
+    font-size:22px;
+    line-height:1.8;
+    color:white;
+}
+
+.movie-card button{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.movie-card button:hover{
+    background:#dc2626;
+    transform:scale(1.05);
+}
+/* ==========================
+        GENRE SECTION
+========================== */
+
+.genre-section{
+    margin-top:50px;
+    text-align:center;
+}
+
+.genre-section h2{
+    font-size:34px;
+    margin-bottom:40px;
+    color:#fff;
+}
+
+.genre-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.genre-card{
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:16px;
+    padding:30px 20px;
+    text-align:center;
+    cursor:pointer;
+    transition:all .3s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.genre-card:hover{
+    transform:translateY(-8px);
+    border-color:#ef4444;
+    box-shadow:0 15px 35px rgba(239,68,68,.15);
+}
+
+.genre-icon{
+    font-size:38px;       /* Smaller icon */
+    color:#e5e7eb;        /* Same color for every icon */
+    margin-bottom:16px;
+    transition:.3s;
+}
+
+.genre-card:hover .genre-icon{
+    color:#ef4444;        /* All icons become red on hover */
+    transform:scale(1.08);
+}
+
+.genre-card h3{
+    font-size:20px;
+    font-weight:600;
+    color:#fff;
+    letter-spacing:.5px;
+}
+
+/* =======================
+      WHY SECTION
+======================= */
+
+.why-section{
+    text-align:center;
+}
+
+.why-section ul{
+    list-style:none;
+    margin-top:30px;
+}
+
+.why-section li{
+    margin:20px 0;
+    font-size:22px;
+    color:#cbd5e1;
+}
+
+/* =======================
+      RESPONSIVE
+======================= */
+
+@media(max-width:900px){
+
+    .hero-section{
+        height:auto;
+        padding:80px 20px;
+    }
+
+    .hero-section h2{
+        font-size:50px;
+    }
+
+    .hero-section p{
+        font-size:20px;
+    }
+
+    .hero-section h3{
+        font-size:18px;
+    }
+
+    nav{
+        gap:20px;
+    }
+
+    nav a{
+        font-size:16px;
+    }
+
+    .trending-section{
+        grid-template-columns:1fr;
+    }
+
+    .movie-card img{
+        height:300px;
+    }
+
+    .genre-section{
+        width:220px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+        padding:15px;
+    }
+
+    .hero-section h2{
+        font-size:40px;
+    }
+
+    .hero-section p{
+        font-size:18px;
+    }
+
+    .hero-section h3{
+        font-size:16px;
+    }
+
+    .trending-section h2,
+    .Genre-section h2,
+    .why-section h2{
+        font-size:28px;
+    }
+
+    .movie-card h3{
+        font-size:18px;
+    }
+
+    .why-section li{
+        font-size:18px;
+    }
+
+}
