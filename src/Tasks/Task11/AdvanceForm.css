@@ -1,0 +1,195 @@
+/* Main Page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Main Container */
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* Heading */
+.main-container h3 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.main-container hr {
+    border: none;
+    border-top: 2px solid #3498db;
+}
+
+/* Form Section */
+.form-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h4 {
+    text-align: center;
+    font-size: 22px;
+    color: #3498db;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.form-section strong {
+    display: inline-block;
+    min-width: 130px;
+    margin: 10px 0;
+    color: #34495e;
+}
+
+/* Text Inputs */
+.form-section input[type="text"],
+.form-section input[type="number"],
+.form-section select,
+.form-section textarea {
+    width: 250px;
+    padding: 9px;
+    margin: 5px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Focus Effect */
+.form-section input[type="text"]:focus,
+.form-section input[type="number"]:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.4);
+}
+
+/* Textarea */
+.form-section textarea {
+    width: 250px;
+    height: 80px;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/* Radio Buttons */
+.form-section input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+    accent-color: #3498db;
+}
+
+/* Checkboxes */
+.form-section input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #3498db;
+}
+
+/* Add / Update Button */
+.form-section > form > button,
+.form-section button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.form-section > form > button:hover,
+.form-section button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Vehicle Information Card */
+.vehicle-info {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f8fbff;
+    border: 1px solid #d6eaf8;
+    border-left: 5px solid #3498db;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+/* Vehicle Card Labels */
+.vehicle-info strong {
+    min-width: 120px;
+    margin: 0;
+}
+
+/* Buttons Section */
+.btn-sections {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Delete Button */
+.btn-sections button:first-child {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Edit Button */
+.btn-sections button:last-child {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button Hover */
+.btn-sections button:first-child:hover {
+    background-color: #c0392b;
+}
+
+.btn-sections button:last-child:hover {
+    background-color: #d68910;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .main-container {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    .form-section strong {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .form-section input[type="text"],
+    .form-section input[type="number"],
+    .form-section select,
+    .form-section textarea {
+        width: 100%;
+    }
+
+    .vehicle-info strong {
+        display: inline-block;
+    }
+}
