@@ -1,0 +1,51 @@
+.main{
+    border: 1px solid black;
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    
+}
+.title{
+    margin-bottom: 70px;
+}
+.head-section{
+        margin-left: 120px;
+
+}
+.head-section a{
+    color: blue;
+}
+.form-section{
+    margin-top: 40px;
+}
+label{
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+input{
+    margin-left: 120px;
+    margin-bottom: 24px;
+    width: 270px;
+    height: 30px;
+    border-radius: 8px;
+}
+select{
+    margin-left: 120px;
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.gender{
+    width: 15px;
+}
+.btn{
+    margin-left: 120px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    color: blue;
+}

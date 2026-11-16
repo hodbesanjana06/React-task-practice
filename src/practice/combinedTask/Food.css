@@ -1,0 +1,43 @@
+
+.main-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 70px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.food-name {
+    text-align: center;
+    color: rgb(75, 42, 165);
+}
+
+.food-info {
+    padding-left: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+    padding-left: 20px;
+}
+
+.btn {
+    text-align: center;
+    height: 30px;
+    border-radius: 6px;
+    width: 100px;
+    cursor: pointer;
+}

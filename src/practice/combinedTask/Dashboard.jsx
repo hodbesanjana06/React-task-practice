@@ -32,3 +32,32 @@ function Dashboard({ students }) {
 }
 
 export default Dashboard;
+
+
+
+
+
+
+
+// import { useState } from "react";
+// import Dashboard from "./practice/combinedTask/Dashboard";
+// import StudentForm from "./practice/combinedTask/StudentForm";
+
+// function App() {
+
+//     const [students, setStudents] = useState([]);
+
+//     function addStudent(data) {
+//         setStudents(prev => [...prev , data]);
+//     }
+
+//     return (
+//         <>
+//             <Dashboard students={students} />
+
+//             <StudentForm addstudent={addStudent} />
+//         </>
+//     );
+// }
+
+// export default App;
